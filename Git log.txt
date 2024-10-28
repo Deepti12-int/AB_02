@@ -1,0 +1,190 @@
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR
+$ git clone https://github.com/Deepti12-int/AB_02.git
+Cloning into 'AB_02'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 1), reused 7 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (1/1), done.
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR
+$ dir
+AB_02
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR
+$ cd AB_02/
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Odd_or_Even - Copy from Raja.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git add .
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git commit -m "new commit from Raja"
+[master 16c95e4] new commit from Raja
+ 1 file changed, 35 insertions(+)
+ create mode 100644 Odd_or_Even - Copy from Raja.java
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 271 bytes | 271.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Deepti12-int/AB_02.git
+   daf5f00..16c95e4  master -> master
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git checkout -b new
+Switched to a new branch 'new'
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git branch --all
+  master
+* new
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git branch --all
+* master
+  new
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git checkout new
+Switched to branch 'new'
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git status
+On branch new
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Odd_or_Even - Copy from Raja.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git add .
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git commit -m "new change inside the file"
+[new 0a76147] new change inside the file
+ 1 file changed, 1 insertion(+)
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git push origin new
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 159.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'new' on GitHub by visiting:
+remote:      https://github.com/Deepti12-int/AB_02/pull/new/new
+remote:
+To https://github.com/Deepti12-int/AB_02.git
+ * [new branch]      new -> new
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git status
+On branch new
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Odd_or_Even - Copy from Raja - Copy (2).java
+        Odd_or_Even - Copy from Raja - Copy (3).java
+        Odd_or_Even - Copy from Raja - Copy.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git add .
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git commit -m "new change - addition of files"
+[new 86aa8f1] new change - addition of files
+ 3 files changed, 108 insertions(+)
+ create mode 100644 Odd_or_Even - Copy from Raja - Copy (2).java
+ create mode 100644 Odd_or_Even - Copy from Raja - Copy (3).java
+ create mode 100644 Odd_or_Even - Copy from Raja - Copy.java
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git push origin new
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 281 bytes | 281.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Deepti12-int/AB_02.git
+   0a76147..86aa8f1  new -> new
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git checkout new
+Switched to branch 'new'
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (new)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git pull origin master
+From https://github.com/Deepti12-int/AB_02
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git merge new
+Updating 16c95e4..86aa8f1
+Fast-forward
+ Odd_or_Even - Copy from Raja - Copy (2).java | 36 ++++++++++++++++++++++++++++
+ Odd_or_Even - Copy from Raja - Copy (3).java | 36 ++++++++++++++++++++++++++++
+ Odd_or_Even - Copy from Raja - Copy.java     | 36 ++++++++++++++++++++++++++++
+ Odd_or_Even - Copy from Raja.java            |  1 +
+ 4 files changed, 109 insertions(+)
+ create mode 100644 Odd_or_Even - Copy from Raja - Copy (2).java
+ create mode 100644 Odd_or_Even - Copy from Raja - Copy (3).java
+ create mode 100644 Odd_or_Even - Copy from Raja - Copy.java
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Deepti12-int/AB_02.git
+   16c95e4..86aa8f1  master -> master
+
+drive@DESKTOP-U8E27R1 MINGW64 ~/OneDrive/Desktop/AB_02_LR/AB_02 (master)
+$
